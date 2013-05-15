@@ -5,7 +5,7 @@ set wildmode=list:longest,full
 set notitle
 set number
 set showmode
-set showcomd
+set showcmd
 set ruler
 set incsearch
 set ignorecase
