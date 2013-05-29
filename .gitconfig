@@ -3,10 +3,24 @@
 	email = dustin.lucien@gmail.com
 
 [hub]
-protocol = https
+    protocol = https
 
 [credential]
 	helper = /opt/boxen/bin/boxen-git-credential
 
 [core]
-excludesfile = /opt/boxen/config/git/gitignore
+    excludesfile = /opt/boxen/config/git/gitignore
+
+[alias]
+   ci  = commit -v
+   co  = checkout
+   di  = diff
+   dc  = diff --cached
+   r   = !git l -20
+   ra  = !git r --all
+   l   = "!source ~/githelpers && pretty_git_log"
+   aa  = add --all
+   drb = !git svn rebase
+
+[color]
+   ui  = true
